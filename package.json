@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-background-mode",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "Prevent apps from going to sleep in background.",
   "cordova": {
     "id": "cordova-plugin-background-mode",
@@ -30,10 +30,6 @@
     {
       "name": "android-sdk",
       "version": ">=16"
-    },
-    {
-      "name": "windows-sdk",
-      "version": ">=10.0.14393.0"
     }
   ],
   "author": "Sebastián Katzer",
