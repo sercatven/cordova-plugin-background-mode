@@ -60,8 +60,8 @@
 
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.WAKE_LOCK" />
-            <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
             <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+            <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
         </config-file>
 
         <config-file target="res/xml/config.xml" parent="/*">
@@ -78,7 +78,7 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <service android:name="de.appplant.cordova.plugin.background.ForegroundService" />
+            <service android:name="de.appplant.cordova.plugin.background.ForegroundService" android:foregroundServiceType="dataSync" />
         </config-file>
 
         <source-file
